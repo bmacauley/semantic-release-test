@@ -5,6 +5,16 @@ on:
       - master
       - main
 jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "build..."
+  test:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "test..."
   release:
     name: release
     runs-on: ubuntu-latest
