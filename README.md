@@ -9,3 +9,7 @@ https://medium.com/hackernoon/a-branching-and-releasing-strategy-that-fits-githu
 https://hackernoon.com/a-branching-and-releasing-strategy-that-fits-github-flow-be1b6c48eca2
 
 test
+
+test2
+
+test 3
