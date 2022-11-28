@@ -27,17 +27,17 @@ jobs:
         - name: Check out repository code
           uses: actions/checkout@v2
 
-        - name: escape github ref name
-          id: escape_name
-          shell: bash
-          run: |
-            printf -v output "%q\n" "${{ github.ref_name }}"
-            echo "value=$output" >> $GITHUB_OUTPUT
+        # - name: escape github ref name
+        #   id: escape_name
+        #   shell: bash
+        #   run: |
+        #     printf -v output "%q\n" "${{ github.ref_name }}"
+        #     echo "value=$output" >> $GITHUB_OUTPUT
 
         - name: pull-request
           uses: repo-sync/pull-request@v2
           with:
-            source_branch: "${{ steps.escape_name.outputs.value }}"
+            # source_branch: "${{ steps.escape_name.outputs.value }}"
             destination_branch: "main"
             github_token: ${{ secrets.GITHUB_TOKEN }}
             pr_title: "Pulling ${{ github.ref_name }} into main"
