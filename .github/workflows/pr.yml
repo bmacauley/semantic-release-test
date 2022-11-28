@@ -2,7 +2,7 @@ name: pull-request
 on:
   push:
     branches:
-      - "feat(*)/**"
+      - "feat/*/**"
 jobs:
   # pull-request:
   #   name: create-pull-request
