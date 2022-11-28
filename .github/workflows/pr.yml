@@ -47,7 +47,7 @@ jobs:
           id: semantic_release_name
           shell: bash
           run: |
-            echo "${{ github.ref_name }}" | tr / : >> $OUTPUT
+            OUTPUT=$(echo "${{ github.ref_name }}" | tr / : )
             echo "value=$OUTPUT" >> $GITHUB_OUTPUT
 
         - name: create-pull-request
