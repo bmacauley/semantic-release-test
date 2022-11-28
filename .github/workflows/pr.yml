@@ -53,8 +53,8 @@ jobs:
         - name: create-pull-request
           run: |
             gh pr create -B main \
-              -H '${{ steps.semantic_release_name.outputs.value}}' \
-              --title 'Pulling ${{ github.ref_name }} into main' \
+              -H '${{ github.ref_name }}' \
+              --title 'Pulling ${{ steps.semantic_release_name.outputs.value}} into main' \
               --body 'Created by Github action' || true
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
