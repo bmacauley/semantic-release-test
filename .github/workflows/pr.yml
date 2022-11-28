@@ -1,6 +1,6 @@
 name: pull-request
 on:
-  create:
+  push:
     branches:
       - "feat/**"
 jobs:
@@ -16,7 +16,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN}}
           commit-message: Auto Pull Request
-          title: Pulling ${{ github.ref }} into main
+          title: Pulling ${{ github.ref_name }} into main
           body: Auto-created Pull Request
-          branch: ${{ github.ref }} # The branch where you commit
+          branch: ${{ github.ref_name }} # The branch where you commit
           base: main # Don't forget to specify the right base branch here
