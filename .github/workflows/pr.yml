@@ -2,7 +2,7 @@ name: pull-request
 on:
   push:
     branches:
-      - "feat/*/**"
+      - "feat(*)/**"
 jobs:
   # pull-request:
   #   name: create-pull-request
@@ -43,7 +43,18 @@ jobs:
         #     pr_title: "Pulling ${{ github.ref_name }} into main"
         #     pr_label: "feature, automated pr"
 
+        - name: translate branch name to semantic-release format for pull request
+          id: semantic_release_name
+          shell: bash
+          run: |
+            OUTPUT=$(echo "${{ github.ref_name }}" | tr / : )
+            echo "value=$OUTPUT" >> $GITHUB_OUTPUT
+
         - name: create-pull-request
-          run: gh pr create -B main -H ${{ github.ref_name }} --title 'Pulling ${{ github.ref_name }} into main' --body 'Created by Github action'
+          run: |
+            gh pr create -B main \
+              -H '${{ steps.semantic_release_name.outputs.value}}' \
+              --title 'Pulling ${{ github.ref_name }} into main' \
+              --body 'Created by Github action' || true
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
