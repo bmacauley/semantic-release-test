@@ -9,3 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "test..."
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "build..."
+  push:
+    name: push
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "push..."

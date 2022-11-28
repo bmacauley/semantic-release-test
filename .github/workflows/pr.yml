@@ -1,0 +1,22 @@
+name: pull-request
+on:
+  create:
+    branches:
+      - "feat/**"
+jobs:
+  pull-request:
+    name: create-pull-request
+    runs-on: ubuntu-latest
+    steps:
+      - name: check out repo code
+        uses: actions/checkout@v3
+
+      - name: create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          commit-message: Auto Pull Request
+          title: Pulling ${{ github.ref }} into main
+          body: Auto-created Pull Request
+          branch: ${{ github.ref }} # The branch where you commit
+          base: main # Don't forget to specify the right base branch here
