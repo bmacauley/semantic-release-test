@@ -4,19 +4,32 @@ on:
     branches:
       - "feat(*)/**"
 jobs:
-  pull-request:
-    name: create-pull-request
-    runs-on: ubuntu-latest
-    steps:
-      - name: check out repo code
-        uses: actions/checkout@v3
+  # pull-request:
+  #   name: create-pull-request
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: check out repo code
+  #       uses: actions/checkout@v3
 
-      - name: create Pull Request
-        uses: peter-evans/create-pull-request@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN}}
-          commit-message: Auto Pull Request
-          title: Pulling ${{ github.ref_name }} into main
-          body: Auto-created Pull Request
-          branch: ${{ github.ref_name }} # The branch where you commit
-          base: main # Don't forget to specify the right base branch here
+  #     - name: create Pull Request
+  #       uses: peter-evans/create-pull-request@v4
+  #       with:
+  #         token: ${{ secrets.GITHUB_TOKEN}}
+  #         commit-message: Auto Pull Request
+  #         title: Pulling ${{ github.ref_name }} into main
+  #         body: Auto-created Pull Request
+  #         branch: ${{ github.ref_name }} # The branch where you commit
+  #         base: main # Don't forget to specify the right base branch here
+
+    create-pull-request:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Check out repository code
+          uses: actions/checkout@v2
+        - name: pull-request
+          uses: repo-sync/pull-request@v2
+          with:
+            destination_branch: "main"
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            pr_label: "feature, automated pr"
+            pr_title: "Pulling ${{ github.ref_name }} into main"
