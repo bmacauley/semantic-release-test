@@ -1,6 +1,6 @@
 name: pull-request
 on:
-  create:
+  push:
     branches:
       - "feat/**"
 jobs:
