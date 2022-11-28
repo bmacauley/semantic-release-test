@@ -4,6 +4,11 @@ on:
     branches:
       - "feat/**"
 jobs:
+  environment:
+    name: environment variables
+    runs-on: ubuntu-latest
+    steps:
+      - run: env
   test:
     name: test
     runs-on: ubuntu-latest
