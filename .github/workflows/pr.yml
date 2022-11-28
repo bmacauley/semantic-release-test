@@ -44,6 +44,6 @@ jobs:
         #     pr_label: "feature, automated pr"
 
         - name: create-pull-request
-          run: gh pr create -B main -H ${{ github.ref_name }} --title 'Pulling ${{ github.ref_name }} into main' --body 'Created by Github action'
+          run: gh pr create -B main -H '${{ github.ref_name }}' --title 'Pulling ${{ github.ref_name }} into main' --body 'Created by Github action'
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
