@@ -54,7 +54,7 @@ jobs:
           run: |
             gh pr create -B main \
               -H '${{ github.ref_name }}' \
-              --title '${{ steps.semantic_release_name.outputs.value}} \
+              --title '${{ steps.semantic_release_name.outputs.value}}' \
               --body 'Pull ${{ steps.semantic_release_name.outputs.value}} into main\nAuto-created by a Github Action' || true
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
