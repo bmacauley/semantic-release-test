@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/bmacauley/semantic-release-test/compare/v1.2.0...v1.3.0) (2022-11-29)
+
+
+### Features
+
+* **xyz:** new-feature-7 ([#14](https://github.com/bmacauley/semantic-release-test/issues/14)) ([34e5760](https://github.com/bmacauley/semantic-release-test/commit/34e5760bc6ac7f18f7c3faad15e7f97f78106fc3))
+
 # [1.2.0](https://github.com/bmacauley/semantic-release-test/compare/v1.1.0...v1.2.0) (2022-11-27)
 
 
