@@ -1,4 +1,4 @@
-name: semantic pull request commit/title validation
+name: semantic-pr-validation
 on:
   pull_request:
     types:
