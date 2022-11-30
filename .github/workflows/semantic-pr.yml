@@ -26,9 +26,9 @@ jobs:
             build
             ci
             chore
-          scopes: |
-            api
-            db
+          # scopes: |
+          #   api
+          #   db
           requireScope: true
           disallowScopes: |
             release
