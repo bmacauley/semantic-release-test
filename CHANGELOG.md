@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/bmacauley/semantic-release-test/compare/v1.3.0...v1.4.0) (2022-11-30)
+
+
+### Features
+
+* **abc:** new-feature-8 ([#16](https://github.com/bmacauley/semantic-release-test/issues/16)) ([7c84f49](https://github.com/bmacauley/semantic-release-test/commit/7c84f49600da0ef2bafc6078dc029b6e987eb024))
+
 # [1.3.0](https://github.com/bmacauley/semantic-release-test/compare/v1.2.0...v1.3.0) (2022-11-29)
 
 
