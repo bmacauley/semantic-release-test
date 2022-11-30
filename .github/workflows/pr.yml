@@ -3,55 +3,26 @@ on:
   push:
     branches:
       - "feat(*)/**"
+
 jobs:
-  # pull-request:
-  #   name: create-pull-request
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: check out repo code
-  #       uses: actions/checkout@v3
-
-  #     - name: create Pull Request
-  #       uses: peter-evans/create-pull-request@v4
-  #       with:
-  #         token: ${{ secrets.GITHUB_TOKEN}}
-  #         commit-message: Auto Pull Request
-  #         title: Pulling ${{ github.ref_name }} into main
-  #         body: Auto-created Pull Request
-  #         branch: ${{ github.ref_name }} # The branch where you commit
-  #         base: main # Don't forget to specify the right base branch here
-
     create-pull-request:
       runs-on: ubuntu-latest
       steps:
         - name: Check out repository code
           uses: actions/checkout@v2
 
-        # - name: escape github ref name
-        #   id: escape_name
-        #   shell: bash
-        #   run: |
-        #     printf -v output "%q\n" "${{ github.ref_name }}"
-        #     echo "value=$output" >> $GITHUB_OUTPUT
-
-        # - name: create-pull-request
-        #   uses: repo-sync/pull-request@v2
-        #   with:
-        #     # source_branch: "${{ steps.escape_name.outputs.value }}"
-        #     destination_branch: "main"
-        #     github_token: ${{ secrets.GITHUB_TOKEN }}
-        #     pr_title: "Pulling ${{ github.ref_name }} into main"
-        #     pr_label: "feature, automated pr"
-
-        - name: translate branch name to semantic-release format for pull request
+        # pull request title will be used as the squash merge commit
+        # branch names cannot contain colons(:), use forward slash as separator
+        # branch name format:  <type>(<scope>)/<short summary>
+        # semantic releasse format: <type>(<scope>): <short summary>
+        - name: translate branch name format to semantic-release format for pull request
           id: semantic_release_name
           shell: bash
           run: |
-            # OUTPUT=$(echo "${{ github.ref_name }}" | tr '/' ':' )
             OUTPUT=$(echo "${{ github.ref_name }}" | sed 's|/|\: |' )
             echo "value=$OUTPUT" >> $GITHUB_OUTPUT
 
-        - name: create-pull-request
+        - name: create pull request
           run: |
             gh pr create -B main \
               -H '${{ github.ref_name }}' \
