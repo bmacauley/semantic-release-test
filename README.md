@@ -30,17 +30,17 @@ Explore the use of semantic-release for auto release tagging within a  github ac
 
 
 ## Reference
-[semver](https://semver.org/)
-[semantic-release](https://github.com/semantic-release/semantic-release)
-[conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
-[conventional changelog](https://github.com/conventional-changelog)
-[commitlint](https://github.com/conventional-changelog/commitlint)
-[]()
-[https://keepachangelog.com/en/1.0.0/](https://keepachangelog.com/en/1.0.0/)
-[angular commit message conventions ](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)
-[introduction to semantic versioning](https://www.geeksforgeeks.org/introduction-semantic-versioning/)
-[branching & releasing strategy that meets github flow](https://medium.com/hackernoon/a-branching-and-releasing-strategy-that-fits-github-flow-be1b6c48eca2)
-https://hackernoon.com/a-branching-and-releasing-strategy-that-fits-github-flow-be1b6c48eca2
+- [semver](https://semver.org/)
+- [semantic-release](https://github.com/semantic-release/semantic-release)
+- [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- [conventional changelog](https://github.com/conventional-changelog)
+- [commitlint](https://github.com/conventional-changelog/commitlint)
+- []()
+- [https://keepachangelog.com/en/1.0.0/](https://keepachangelog.com/en/1.0.0/)
+- [angular commit message conventions ](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)
+- [introduction to semantic versioning](https://www.geeksforgeeks.org/introduction-semantic-versioning/)
+- [branching & releasing strategy that meets github flow](https://medium.com/hackernoon/a-branching-and-releasing-strategy-that-fits-github-flow-be1b6c48eca2)
+
 
 
 ## Authors
