@@ -35,7 +35,7 @@ Explore the use of semantic-release for auto release tagging within a  github ac
 - [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
 - [conventional changelog](https://github.com/conventional-changelog)
 - [commitlint](https://github.com/conventional-changelog/commitlint)
-- []()
+- [semantic release and changelog tools](https://www.nextrelease.io/kb/why-should-i-use-next-release/)
 - [https://keepachangelog.com/en/1.0.0/](https://keepachangelog.com/en/1.0.0/)
 - [angular commit message conventions ](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)
 - [introduction to semantic versioning](https://www.geeksforgeeks.org/introduction-semantic-versioning/)

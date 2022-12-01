@@ -21,21 +21,21 @@ plugins:
 
   # Generate CHANGELOG.md
   - - "@semantic-release/release-notes-generator"
-    - preset: angular
-      presetConfig:
-        # spec: https://github.com/conventional-changelog/conventional-changelog-config-spec/tree/master/versions/2.1.0
-        types:
-          - { type: feat, section: "Features" }
-          - { type: fix, section: "Bug Fixes" }
-          - { type: chore, section: "Misc" }
-          - { type: docs, section: "Misc" }
-          - { type: style, section: "Improvements" }
-          - { type: refactor, section: "Improvements" }
-          - { type: perf, section: "Improvements" }
-          - { type: test, section: "Automation" }
-          - { type: ci, section: "Automation" }
-          - { type: build, section: "Automation" }
-          - { type: update, section: "Automation" }
+    # - preset: angular
+    #   presetConfig:
+    #     # spec: https://github.com/conventional-changelog/conventional-changelog-config-spec/tree/master/versions/2.1.0
+    #     types:
+    #       - { type: feat, section: "Features" }
+    #       - { type: fix, section: "Bug Fixes" }
+    #       - { type: chore, section: "Misc" }
+    #       - { type: docs, section: "Misc" }
+    #       - { type: style, section: "Improvements" }
+    #       - { type: refactor, section: "Improvements" }
+    #       - { type: perf, section: "Improvements" }
+    #       - { type: test, section: "Automation" }
+    #       - { type: ci, section: "Automation" }
+    #       - { type: build, section: "Automation" }
+    #       - { type: update, section: "Automation" }
 
   - - "@semantic-release/changelog"
     - changelogTitle: "# ChangeLog\nAll notable changes to this project will be documented in this file.\nSee [Conventional Commits](https://conventionalcommits.org) for commit guidelines."
