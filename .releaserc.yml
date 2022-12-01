@@ -4,7 +4,7 @@ plugins:
   # Determine the type of release by analyzing commits.
   # ie: Major, Minor or Patch
   - - "@semantic-release/commit-analyzer"
-    - preset: angular
+    - preset: conventionalcommits
       releaseRules:
           - { breaking: true, release: major }
           - { revert: true, release: patch }
@@ -21,7 +21,7 @@ plugins:
 
   # Generate CHANGELOG.md
   - - "@semantic-release/release-notes-generator"
-    # - preset: angular
+    - preset: conventionalcommits
     #   presetConfig:
     #     # spec: https://github.com/conventional-changelog/conventional-changelog-config-spec/tree/master/versions/2.1.0
     #     types:
