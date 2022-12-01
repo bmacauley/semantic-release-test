@@ -1,4 +1,4 @@
-# ChangeLog All notable changes to this project will be documented in this file.
+# ChangeLog\nAll notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
 ## [1.4.3](https://github.com/bmacauley/semantic-release-test/compare/v1.4.2...v1.4.3) (2022-12-01)
