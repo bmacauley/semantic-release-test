@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.0](https://github.com/bmacauley/semantic-release-test/compare/v1.4.7...v1.5.0) (2022-12-01)
+
+
+### Features
+
+* **abc:** new-feature-9 ([#17](https://github.com/bmacauley/semantic-release-test/issues/17)) ([0f665b1](https://github.com/bmacauley/semantic-release-test/commit/0f665b10916b88db921a9725eebc0df92e9cc86a))
+
 ### [1.4.7](https://github.com/bmacauley/semantic-release-test/compare/v1.4.6...v1.4.7) (2022-12-01)
 
 ## [1.4.6](https://github.com/bmacauley/semantic-release-test/compare/v1.4.5...v1.4.6) (2022-12-01)
