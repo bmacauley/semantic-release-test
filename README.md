@@ -8,12 +8,6 @@ Explore the use of semantic-release for auto release tagging within a  github ac
 - use semantic-release to automatically create correct semver release tags(ie major.minor.fix) and to update the changelog
 
 
-# semantic-release config
-
-
-
-
-
 ## tools/github actions used
 - [github cli](https://cli.github.com/)
 - [semantic-release](https://semantic-release.gitbook.io/semantic-release/)
@@ -22,10 +16,8 @@ Explore the use of semantic-release for auto release tagging within a  github ac
 - [semantic-release/gitlab](https://github.com/semantic-release/gitlab)
 - [amannn/action-semantic-pull-request](https://github.com/amannn/action-semantic-pull-request)
 - [Semantic PRs app](https://github.com/Ezard/semantic-prs)
-
-
-
-# test scenarios
+- [python-semantic-release/python-semantic-release](https://github.com/python-semantic-release/python-semantic-release)
+- [python-sematic-release docs](https://python-semantic-release.readthedocs.io/en/latest/index.html)
 
 
 
