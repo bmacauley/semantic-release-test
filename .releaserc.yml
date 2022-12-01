@@ -37,7 +37,8 @@ plugins:
           - { type: build, section: "Automation" }
           - { type: update, section: "Automation" }
 
-  - "@semantic-release/changelog"
+  - - "@semantic-release/changelog"
+    - changelogTitle: "#ChangeLog/nAll notable changes to this project will be documented in this file.\nSee [Conventional Commits](https://conventionalcommits.org) for commit guidelines."
 
   # Commit CHANGELOG.md back to repo
   - - "@semantic-release/git"
